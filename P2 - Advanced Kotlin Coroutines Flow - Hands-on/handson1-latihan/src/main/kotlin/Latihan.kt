@@ -22,8 +22,8 @@ fun main() = runBlocking {
 
     val startTime = System.currentTimeMillis()
 
-    val profileDeferred = async { fetchUserProfile("user123") }
-    val postsDeferred = async { fetchUserPosts("user123") }
+    val profileDeferred = async { fetchUserProfile("Gede Valendra") }
+    val postsDeferred = async { fetchUserPosts("Gede Valendra") }
 
     val profile = profileDeferred.await()
     val posts = postsDeferred.await()
